@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
     if (id != undefined) {
         res.sendFile(path.join(__dirname + '/static/html/game.html'))
     } else {
-        res.redirect('/')
+        res.redirect('/login')
     }
 })
 
